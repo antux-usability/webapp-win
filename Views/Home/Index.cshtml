@@ -2,7 +2,8 @@
     ViewData["Title"] = "Home Page";
 
     string user_name = Environment.GetEnvironmentVariable("APPSETTING_name");
-
+    string badge_color = Environment.GetEnvironmentVariable("APPSETTING_color");
+    string font_size = Environment.GetEnvironmentVariable("APPSETTING_size");
     string user_message1 = "";
     string user_message2 = "";
 
@@ -17,13 +18,16 @@
         user_message1 = @"Hello " + user_name + " nice to meet you.";
         user_message2 = @"Thanks for adding the app setting!";
     }
+
+    badge_color = string.IsNullOrEmpty(badge_color)?"#00a4ef":badge_color;
+    font_size =  string.IsNullOrEmpty(font_size)? "1rm":font_size;
 }
 
 <div style="display: inline-flex;">
 
     <section id="Badge">
         <div style="
-            background: #00a4ef;
+            background: @badge_color;
             margin: 10px;
             margin-left:auto;
             margin-right:auto;
@@ -33,7 +37,7 @@
             overflow: hidden;
             box-shadow: 10px 10px 5px #888;
             border-width: .75px;
-            border-color: #00a4ef;
+            border-color: @badge_color;
             border-style: solid;
         ">
             <div id="punch-hole" style="
@@ -94,7 +98,7 @@
         margin-bottom: auto;
         ">
             <div style="
-                font-size: 16px;
+                font-size: @font_size;
                 font-weight: bold; ">
                 <p>
                     @user_message1
