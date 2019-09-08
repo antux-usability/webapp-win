@@ -24,16 +24,11 @@
 }
 
 <div style="display: inline-flex;">
-<div style="
-        padding: 25px;
-        width: 70%;
-        margin-left: 25px;
-        margin-top: auto;
-        margin-bottom: auto;
-        ">
-            <div style="
-                font-size: @font_size;
-                font-weight: bold; ">
+
+    <div style="padding: 25px; width: 70%; 
+                margin-left: 25px; margin-top: auto; margin-bottom: auto; ">
+            
+            <div style="font-size: @font_size; font-weight: bold; ">
                 <p>
                     @user_message1
                 </p>
@@ -44,72 +39,41 @@
     </div>
     
     <section id="Badge">
-        <div style="
-            background: @badge_color;
-            margin: 10px;
-            margin-left:auto;
-            margin-right:auto;
-            border-radius: 10px;
-            width: 200px;
-            height: 310px;
-            overflow: hidden;
-            box-shadow: 10px 10px 5px #888;
-            border-width: .75px;
-            border-color: @badge_color;
-            border-style: solid;
-        ">
-            <div id="punch-hole" style="
-            width: 50px;
-            height: 11px;
-            background: white;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 17px;
-            margin-bottom: 10px;
-            box-shadow: inset 0 0 5px #000000;
-            ">
+        <div style="background: @badge_color; margin: 10px;
+                    margin-left:auto; margin-right:auto;
+                    border-radius: 10px; width: 200px;
+                    height: 310px; overflow: hidden;
+                    box-shadow: 10px 10px 5px #888; border-width: .75px;
+                    border-color: @badge_color; border-style: solid; ">
+            
+            <div id="punch-hole" 
+                style="width: 50px; height: 11px;
+                       background: white; border-radius: 5px;
+                       margin-left: auto; margin-right: auto;
+                       margin-top: 17px; margin-bottom: 10px;
+                       box-shadow: inset 0 0 5px #000000; ">
             </div>
 
-            <div id="circle" style="
-            width: 120px;
-            height: 120px;
-            background: white;
-            border-radius: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-            ">
+            <div id="circle" 
+                style="width: 120px; height: 120px;
+                        background: white; border-radius: 50%;
+                        margin-left: auto; margin-right: auto; margin-bottom: 20px;">
                 <img src="/images/Alien.svg">
             </div>
 
-            <div id="bottom" style="
-            background-color: #fff;
-            width: 100%;
-            height: 130px; ">
+            <div id="bottom" 
+                style="background-color: #fff; width: 100%; height: 130px; ">
 
-
-                <div title="@user_name" style="
-                    padding: 10px;
-                    width: 190px;
-                    height: 100px;
-                    overflow: hidden;
-                    font-weight: 500;
-                    font-size: 25px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    ">@user_name</div>
+                <div title="@user_name" 
+                    style="padding: 10px; width: 190px;
+                           height: 100px; overflow: hidden;
+                           font-weight: 500;  font-size: 25px;
+                           text-overflow: ellipsis; white-space: nowrap;">@user_name
+                </div>
             
-                    <img style="
-                    top: -25px;
-                    position: relative;"
-                    src="/images/ms-logo.svg" >
-            
+                <img style=" top: -25px; position: relative;"
+                        src="/images/ms-logo.svg" >
+            </div>
         </div>
     </section>
-
-    
-
 </div>
-
-
